@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Bridge\Bridge.csproj", "{33F54AFB-4333-45B0-8848-B57C6E16B9A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeTest", "BridgeTest\BridgeTest.csproj", "{2AC6E675-73A2-440D-8845-CDE45E5AFCCD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeTest.cs", "BridgeTest\BridgeTest.cs.csproj", "{2AC6E675-73A2-440D-8845-CDE45E5AFCCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
