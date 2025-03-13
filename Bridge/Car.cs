@@ -8,25 +8,35 @@ using System.Threading.Tasks;
 namespace Bridge
 {
     /// <summary>
-    /// Represents a car crossing the bridge
-    /// inherits from the Vehicle <see cref="Vehicle"/> class.
+    /// Represents a car crossing the bridge.
+    /// Inherits from the <see cref="Vehicle"/> class.
     /// </summary>
     public class Car : Vehicle
     {
-        public Car()
-        {
-        }
-
-        public Car(string licensePlate, DateTime date) : base(licensePlate, date)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Car"/> class with default values.
+        /// </summary>
+        public Car() : this("Unknown", DateTime.Now, false) // Default values
         {
         }
 
         /// <summary>
-        /// Returns the price for crossing the bridge for a car.
-        /// with a fixed price of 230.
+        /// Initializes a new instance of the <see cref="Car"/> class with specified values.
         /// </summary>
-        /// <returns> Price for a Car to cross is (230) </returns>
-        public override double Price()
+        /// <param name="licensePlate">The license plate of the car.</param>
+        /// <param name="date">The date and time when the car crossed the bridge.</param>
+        /// <param name="hasBrobizz">Indicates whether the car has a Brobizz discount.</param>
+        public Car(string licensePlate, DateTime date, bool hasBrobizz)
+            : base(licensePlate, date, hasBrobizz)
+        {
+        }
+
+        /// <summary>
+        /// Returns the base price for crossing the bridge for a car.
+        /// The fixed price is 230.
+        /// </summary>
+        /// <returns>The base price for a car, which is 230.</returns>
+        public override double BasePrice()
         {
             return 230;
         }
@@ -35,7 +45,7 @@ namespace Bridge
         /// Returns the type of the vehicle.
         /// For this class, it returns "Car".
         /// </summary>
-        /// <returns>The vehicle type as a string ("Car").</returns>
+        /// <returns>A string representing the vehicle type ("Car").</returns>
         public override string VehicleType()
         {
             return "Car";

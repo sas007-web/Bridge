@@ -1,8 +1,8 @@
 ﻿namespace Bridge
 {
     /// <summary>
-    /// Represents a vehicle, crosing the birdge 
-    /// Base class, a secefic vehicle type must be inherited from this class
+    /// Represents a vehicle crossing the bridge.
+    /// Base class; a specific vehicle type must be inherited from this class.
     /// </summary>
     public abstract class Vehicle
     {
@@ -10,7 +10,7 @@
 
         /// <summary>
         /// Gets or sets the license plate of the vehicle.
-        /// Makes sure that the license plate does not exceed 7 characters.
+        /// Ensures that the license plate does not exceed 7 characters.
         /// </summary>
         public string LicensePlate
         {
@@ -22,7 +22,7 @@
                 {
                     throw new ArgumentException("License plate cannot be longer than 7 characters.");
                 }
-                    _licensePlate = value;
+                _licensePlate = value;
             }
         }
 
@@ -32,36 +32,58 @@
         public DateTime Date { get; set; }
 
         /// <summary>
+        /// Gets or sets a value indicating whether the vehicle has a Brobizz.
+        /// </summary>
+        public bool HasBrobizz { get; set; }
+
+        /// <summary>
         /// Initializes a new instance of the <see cref="Vehicle"/> class with default values.
         /// License plate is set to "Unknown" and date is set to the current date and time.
         /// </summary>
         protected Vehicle()
         {
-            LicensePlate = "Unknown";  // Standardværdi
-            Date = DateTime.Now;       // Sætter dato til nu
+            LicensePlate = "Unknown";  // Standard value
+            Date = DateTime.Now;       // Set date to now
+            HasBrobizz = false;
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Vehicle"/> class with specified values.
         /// </summary>
-        /// <param name="licensePlate">The license plate of the vehicle.</param>
-        /// <param name="date">The date and time of crossing.</param>
-        protected Vehicle(string licensePlate, DateTime date)
+        /// <param name="licensePlate">The vehicle's license plate.</param>
+        /// <param name="date">The date and time when the vehicle crossed the bridge.</param>
+        /// <param name="hasBrobizz">Indicates whether the vehicle has a Brobizz.</param>
+        protected Vehicle(string licensePlate, DateTime date, bool hasBrobizz = false)
         {
             LicensePlate = licensePlate;
             Date = date;
+            HasBrobizz = hasBrobizz;
         }
+
         /// <summary>
-        /// Calculates the price for crossing the bridge.
-        /// Specefik vehicle Overriddes price.
-        /// Must be implemented in derived classes. 
+        /// Returns the base price of the vehicle.
         /// </summary>
-        /// <returns>The price of crossing as a double.</returns>
-        public abstract double Price();
+        /// <returns>The base price.</returns>
+        public abstract double BasePrice();
+
+        /// <summary>
+        /// Returns the price of the vehicle.
+        /// A Brobizz discount is applied if the vehicle has a Brobizz.
+        /// </summary>
+        /// <returns>The final price.</returns>
+        public double Price()
+        {
+            double price = BasePrice();
+            if (HasBrobizz)
+            {
+                price *= 0.9;
+            }
+            return price;
+        }
 
         /// <summary>
         /// Returns the type of the vehicle.
-        /// Overrides specefik vehicle type.
+        /// Overrides specific vehicle type.
         /// </summary>
         /// <returns>The vehicle type as a string.</returns>
         public abstract string VehicleType();
