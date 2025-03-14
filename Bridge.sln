@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketLibrary", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketTests", "StoreBaeltTicketTests\StoreBaeltTicketTests.csproj", "{39B85593-5B6A-4315-91F2-D2FF2C75D975}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundbroenTicketLibrary", "OresundbroenTicketLibrary\OresundbroenTicketLibrary.csproj", "{6B4933BE-F60B-4316-A0EB-FA823FBB03DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundTicketLibrary.Tests", "OresundTicketLibrary.Tests\OresundTicketLibrary.Tests.csproj", "{DFCCF8BC-447E-41AC-8973-50363DE00B52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{39B85593-5B6A-4315-91F2-D2FF2C75D975}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39B85593-5B6A-4315-91F2-D2FF2C75D975}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39B85593-5B6A-4315-91F2-D2FF2C75D975}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B4933BE-F60B-4316-A0EB-FA823FBB03DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B4933BE-F60B-4316-A0EB-FA823FBB03DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B4933BE-F60B-4316-A0EB-FA823FBB03DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B4933BE-F60B-4316-A0EB-FA823FBB03DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFCCF8BC-447E-41AC-8973-50363DE00B52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFCCF8BC-447E-41AC-8973-50363DE00B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFCCF8BC-447E-41AC-8973-50363DE00B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFCCF8BC-447E-41AC-8973-50363DE00B52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
