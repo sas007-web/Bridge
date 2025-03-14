@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bridge</name>
+    </assembly>
+    <members>
+        <member name="T:Bridge.Car">
+            <summary>
+            Represents a car crossing the bridge.
+            Inherits from the <see cref="T:Bridge.Vehicle"/> class.
+            </summary>
+        </member>
+        <member name="M:Bridge.Car.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Bridge.Car"/> class with default values.
+            </summary>
+        </member>
+        <member name="M:Bridge.Car.#ctor(System.String,System.DateTime,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Bridge.Car"/> class with specified values.
+            </summary>
+            <param name="licensePlate">The license plate of the car.</param>
+            <param name="date">The date and time when the car crossed the bridge.</param>
+            <param name="hasBrobizz">Indicates whether the car has a Brobizz discount.</param>
+        </member>
+        <member name="M:Bridge.Car.BasePrice">
+            <summary>
+            Returns the base price for crossing the bridge for a car.
+            The fixed price is 230.
+            </summary>
+            <returns>The base price for a car, which is 230.</returns>
+        </member>
+        <member name="M:Bridge.Car.VehicleType">
+            <summary>
+            Returns the type of the vehicle.
+            For this class, it returns "Car".
+            </summary>
+            <returns>A string representing the vehicle type ("Car").</returns>
+        </member>
+        <member name="T:Bridge.MC">
+            <summary>
+            Represents a motorcycle (MC) crossing the bridge.
+            Inherits from the <see cref="T:Bridge.Vehicle"/> class.
+            </summary>
+        </member>
+        <member name="M:Bridge.MC.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Bridge.MC"/> class with default values.
+            </summary>
+        </member>
+        <member name="M:Bridge.MC.#ctor(System.String,System.DateTime,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Bridge.MC"/> class with specified values.
+            </summary>
+            <param name="licensePlate">The motorcycle's license plate.</param>
+            <param name="date">The date and time when the motorcycle crossed the bridge.</param>
+            <param name="hasBrobizz">Indicates whether the motorcycle has a Brobizz.</param>
+        </member>
+        <member name="M:Bridge.MC.BasePrice">
+            <summary>
+            Returns the base price for crossing the bridge for a motorcycle.
+            The price is fixed at 120.
+            </summary>
+            <returns>The base price for an MC, which is 120.</returns>
+        </member>
+        <member name="M:Bridge.MC.VehicleType">
+            <summary>
+            Gets the type of the vehicle.
+            For this class, overrides and returns "MC" (Motorcycle).
+            </summary>
+            <returns>The vehicle type as a string ("MC").</returns>
+        </member>
+        <member name="T:Bridge.Vehicle">
+            <summary>
+            Represents a vehicle crossing the bridge.
+            Base class; a specific vehicle type must be inherited from this class.
+            </summary>
+        </member>
+        <member name="P:Bridge.Vehicle.LicensePlate">
+            <summary>
+            Gets or sets the license plate of the vehicle.
+            Ensures that the license plate does not exceed 7 characters.
+            </summary>
+        </member>
+        <member name="P:Bridge.Vehicle.Date">
+            <summary>
+            Gets or sets the date and time when the vehicle crossed the bridge.
+            </summary>
+        </member>
+        <member name="P:Bridge.Vehicle.HasBrobizz">
+            <summary>
+            Gets or sets a value indicating whether the vehicle has a Brobizz.
+            </summary>
+        </member>
+        <member name="M:Bridge.Vehicle.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Bridge.Vehicle"/> class with default values.
+            License plate is set to "Unknown" and date is set to the current date and time.
+            </summary>
+        </member>
+        <member name="M:Bridge.Vehicle.#ctor(System.String,System.DateTime,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Bridge.Vehicle"/> class with specified values.
+            </summary>
+            <param name="licensePlate">The vehicle's license plate.</param>
+            <param name="date">The date and time when the vehicle crossed the bridge.</param>
+            <param name="hasBrobizz">Indicates whether the vehicle has a Brobizz.</param>
+        </member>
+        <member name="M:Bridge.Vehicle.BasePrice">
+            <summary>
+            Returns the base price of the vehicle.
+            </summary>
+            <returns>The base price.</returns>
+        </member>
+        <member name="M:Bridge.Vehicle.Price">
+            <summary>
+            Returns the price of the vehicle.
+            A Brobizz discount is applied if the vehicle has a Brobizz.
+            </summary>
+            <returns>The final price.</returns>
+        </member>
+        <member name="M:Bridge.Vehicle.VehicleType">
+            <summary>
+            Returns the type of the vehicle.
+            Overrides specific vehicle type.
+            </summary>
+            <returns>The vehicle type as a string.</returns>
+        </member>
+    </members>
+</doc>

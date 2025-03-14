@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Bridge\Bridge.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeTest.cs", "BridgeTest\BridgeTest.cs.csproj", "{2AC6E675-73A2-440D-8845-CDE45E5AFCCD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketLibrary", "StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj", "{B322DA25-AD59-4204-84AA-5AED115BAA22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketTests", "StoreBaeltTicketTests\StoreBaeltTicketTests.csproj", "{39B85593-5B6A-4315-91F2-D2FF2C75D975}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{2AC6E675-73A2-440D-8845-CDE45E5AFCCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AC6E675-73A2-440D-8845-CDE45E5AFCCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AC6E675-73A2-440D-8845-CDE45E5AFCCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B322DA25-AD59-4204-84AA-5AED115BAA22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B322DA25-AD59-4204-84AA-5AED115BAA22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B322DA25-AD59-4204-84AA-5AED115BAA22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B322DA25-AD59-4204-84AA-5AED115BAA22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39B85593-5B6A-4315-91F2-D2FF2C75D975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39B85593-5B6A-4315-91F2-D2FF2C75D975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39B85593-5B6A-4315-91F2-D2FF2C75D975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39B85593-5B6A-4315-91F2-D2FF2C75D975}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

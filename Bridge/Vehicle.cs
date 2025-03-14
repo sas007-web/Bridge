@@ -71,7 +71,7 @@
         /// A Brobizz discount is applied if the vehicle has a Brobizz.
         /// </summary>
         /// <returns>The final price.</returns>
-        public double Price()
+        public virtual double Price()
         {
             double price = BasePrice();
             if (HasBrobizz)
